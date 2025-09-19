@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import streamlit as st
-from binance import Client
+from binance.client import Client
 import pandas as pd
 import plotly.graph_objects as go
 import numpy as np
@@ -313,4 +313,5 @@ if client:
     update_chart()
 else:
     st.stop()
+
 
